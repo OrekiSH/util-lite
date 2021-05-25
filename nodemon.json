@@ -1,0 +1,6 @@
+{
+  "watch": ["packages"],
+  "ignore": ["es/*", "lib/*", "__tests__/*"],
+  "ext": "ts",
+  "exec": "npm run build"
+}

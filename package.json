@@ -1,0 +1,60 @@
+{
+  "name": "util-lite",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": {
+    "name": "OrekiSH",
+    "email": "orekish@163.com"
+  },
+  "scripts": {
+    "bootstrap": "node ./scripts/bootstrap.js",
+    "lint": "eslint --ext .ts --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .ts --ignore-path .gitignore .",
+    "build": "node scripts/build",
+    "build-watch": "nodemon",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "test": "nyc ts-mocha packages/**/*.spec.ts",
+    "size": "bundlesize"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/assert": "^1.5.4",
+    "@types/mocha": "^8.2.2",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "benchmark": "^2.1.4",
+    "bundlesize": "^0.18.1",
+    "conventional-changelog": "^3.1.24",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.23.2",
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.0.0",
+    "lodash": "^4.17.21",
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7",
+    "nyc": "^15.1.0",
+    "ts-mocha": "^8.0.0",
+    "typescript": "^4.2.4"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  }
+}

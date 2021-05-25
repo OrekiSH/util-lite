@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "airbnb-typescript/base"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    // dont use default export
+    "import/no-default-export": 2,
+    "import/prefer-default-export": 0
+  },
+  "ignorePatterns": ["**/es/*", "**/lib/*", "*.spec.ts"]
+}
