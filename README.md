@@ -1,4 +1,4 @@
-# util-lite
+# util-lite [![build status](https://github.com/orekish/util-lite/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/orekish/util-lite/actions/workflows/ci.yml)
 
 Type-safe Functions less than 1kb with high performance✨
 

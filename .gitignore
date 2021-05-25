@@ -70,9 +70,9 @@ typings/
 .nuxt
 
 # lib build output
-/dist
-/lib
-/es
+dist
+lib
+es
 
 # vuepress build output
 .vuepress/dist
