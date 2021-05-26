@@ -15,6 +15,7 @@ function transpile(name, modules) {
       }],
     ],
     plugins: ['@babel/plugin-transform-runtime'],
+    comments: false,
   });
   // output
   const dir = `${packagesDir}/${name}/${modules === 'cjs' ? 'lib' : 'es'}`;
