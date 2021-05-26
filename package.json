@@ -17,6 +17,7 @@
     "build-watch": "nodemon",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "test": "nyc ts-mocha packages/**/*.spec.ts",
+    "posttest": "nyc report --reporter=json",
     "size": "bundlesize"
   },
   "devDependencies": {

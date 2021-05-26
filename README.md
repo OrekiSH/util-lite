@@ -1,6 +1,6 @@
 # util-lite [![build status](https://github.com/orekish/util-lite/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/orekish/util-lite/actions/workflows/ci.yml)
 
-Type-safe Functions less than 1kb with high performance✨
+Type-Safe Functions less than 1kb with high performance✨
 
 - omit: 237B(gzip)
 - pick: 242B(gzip)
