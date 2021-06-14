@@ -9,6 +9,6 @@ Type-Safe Functions less than 1kb with high performance✨
 - get: 420B (gzip)
 - set
 - camelCase
-- kebabCase: 224B (gzip)
+- kebabcase: 224B (gzip)
 - upperFirst
 - cloneDeep

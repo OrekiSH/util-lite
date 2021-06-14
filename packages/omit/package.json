@@ -31,7 +31,7 @@
   ],
   "license": "MIT",
   "bugs": "https://github.com/OrekiSH/util-lite/issues",
-  "homepage": "https://github.com/OrekiSH/util-lite/tree/master/packages/omit#readme",
+  "homepage": "https://github.com/OrekiSH/util-lite/tree/main/packages/omit#readme",
   "publishConfig": {
     "access": "public"
   }

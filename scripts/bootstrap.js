@@ -37,7 +37,7 @@ files.forEach((shortName) => {
     ],
     license: 'MIT',
     bugs: `https://github.com/OrekiSH/${pkgName}/issues`,
-    homepage: `https://github.com/OrekiSH/${pkgName}/tree/master/packages/${shortName}#readme`,
+    homepage: `https://github.com/OrekiSH/${pkgName}/tree/main/packages/${shortName}#readme`,
     publishConfig: {
       access: 'public',
     },

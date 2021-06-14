@@ -7,16 +7,16 @@
  * @returns {string} Returns the kebab cased string.
  * @example
  *
- * kebabCase('Foo Bar')
+ * kebabcase('Foo Bar')
  * // => 'foo-bar'
  *
- * kebabCase('fooBar')
+ * kebabcase('fooBar')
  * // => 'foo-bar'
  *
- * kebabCase('__FOO_BAR__')
+ * kebabcase('__FOO_BAR__')
  * // => 'foo-bar'
  */
-export function kebabCase(s: string) {
+export function kebabcase(s: string) {
   return s.replace(/([a-z])([A-Z])/g, '$1-$2')
     .replace(/[\s_]+/g, '-')
     // eslint-disable-next-line

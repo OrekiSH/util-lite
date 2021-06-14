@@ -1,15 +1,15 @@
 const { Suite } = require('benchmark');
 const _ = require('lodash');
-const { kebabCase } = require('../lib');
+const { kebabcase } = require('../lib');
 
-const suite = new Suite('kebabCase');
+const suite = new Suite('kebabcase');
 
 suite
 .add('util-lite', () => {
-  kebabCase('fooBar')
+  kebabcase('fooBar')
 })
 .add('lodash', () => {
-  _.kebabCase('fooBar');
+  _.kebabcase('fooBar');
 })
 .on('cycle', function(event) {
   console.log(String(event.target));

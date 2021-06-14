@@ -1,13 +1,13 @@
 import { strictEqual } from "assert";
-import { kebabCase } from "../index";
+import { kebabcase } from "../index";
 
-describe('kebabCase', () => {
+describe('kebabcase', () => {
   it('should works just like lodash', () => {
-    strictEqual(kebabCase('Foo Bar'), 'foo-bar');
-    strictEqual(kebabCase('fooBar'), 'foo-bar');
-    strictEqual(kebabCase('__FOO_BAR__'), 'foo-bar');
-    strictEqual(kebabCase('ABC_123'), 'abc-123');
-    strictEqual(kebabCase('@#$%-_ABC_123'), 'abc-123');
-    strictEqual(kebabCase('@#$%-汉字_ABC_123'), '汉字-abc-123');
+    strictEqual(kebabcase('Foo Bar'), 'foo-bar');
+    strictEqual(kebabcase('fooBar'), 'foo-bar');
+    strictEqual(kebabcase('__FOO_BAR__'), 'foo-bar');
+    strictEqual(kebabcase('ABC_123'), 'abc-123');
+    strictEqual(kebabcase('@#$%-_ABC_123'), 'abc-123');
+    strictEqual(kebabcase('@#$%-汉字_ABC_123'), '汉字-abc-123');
   });
 });
